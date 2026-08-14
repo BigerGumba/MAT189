@@ -1,0 +1,145 @@
+{
+  "GUIDE-DO-NOT-CALL":{
+    "1":"/p-Pause for five frames",
+    "2":"/l-Long Pause for thirty frames",
+    "3":"/r-Reveal text until next command",
+    "4":"/n-Normal scroll /r",
+    "5":"/s-Speaker Advancement",
+    "6":"/e-End of text block",
+    "7":"/c-Clear box",
+    "8":"//-Print Forward Slash",
+    "9":"/!##-Trigger Custom Event"
+  },
+  "introductoryCutscene":{
+    "speaker":[],
+    "text":"Initialized dialogue extension./p Press Z to continue./eWelcome-/l to Exelsior's World./eBut you may be wondering, just what kind of world is this?/eSome may call it ugly, or wrong, or cruel./p./p./l however.../eThe ruler of this world would beg to differ. They say these opinions are void, that their world is objectively perfect as is./eMany say beauty is in the eye of the beholder, but can the beholder alter the meaning of beauty?/eThat is for you to decide,/p in due time./l For now./p./p./eYou must work./e/!00"
+  },
+  "sc00Interact00":{
+    "speaker":["OPERATOR0040"],
+    "text":"My bed./p Not very comfortable, but it serves its purpose./e"
+  },
+  "sc00Interact001": {
+    "speaker":["OPERATOR0040"],
+    "text":"I'm tired./e"
+  },
+  "sc00Interact01":{
+    "speaker":["OPERATOR0040"],
+    "text":"Behind the bars is a wide hallway./p How long it goes, I could never say./e"
+  },
+  "sc00Interact011":{
+    "speaker":["OPERATOR0040"],
+    "text":"I've never been outside this room before./l Well,/p at least not while I'm conscious./eApparently every now and then they take us out for health inspection and cleaning while we sleep./e"
+  },
+  "sc00Interact02":{
+    "speaker":["OPERATOR0040"],
+    "text":"Personal belongings, such as some clothes and fidgets./e"
+  },
+  "sc00Interact03":{
+    "speaker":["OPERATOR0040"],
+    "text":"Food comes from here./p Sometimes I'll also get new clothes./eI'm pretty hungry, but it seems as if they're short on food for today./e"
+  },
+  "sc00Interact031":{
+    "speaker":["OPERATOR0040"],
+    "text":"Oh well,/p I can wait./e"
+  },
+  "sc00Interact04":{
+    "speaker":["OPERATOR0040"],
+    "text":"I don't need to go right now./e"
+  },
+  "sc00Interact05":{
+    "speaker":["OPERATOR0040"],
+    "text":"I probably need to be at work soon./p./p. Time to put this thing on./l Again./e/!01"
+  },
+  "sc00Interact051":{
+    "speaker":[""],
+    "text":"Almost on command,/p the machinery begins to wake up./lAnd,/p through the headset, you begin to make out a familiar setting./e/!02"
+  },
+  "sc01Cutscene":{
+    "speaker":["OPERATOR0040"],
+    "text":"Gee, my head hurts.../eI'll try to log off early today, I suppose./l But here we are./e"
+  },
+  "sc01Interact00":{
+    "speaker":["OPERATOR0040"],
+    "text":"I could change my appearance with this box if I wanted, but there's not much point./e"
+  },
+  "sc01Interact01":{
+    "speaker":["OPERATOR0040"],
+    "text":"There's some games on this thing, I guess./eMaybe if I feel a bit better later today I'll entertain them, /pbut for now I need to get to work!"
+  },
+  "sc01Interact011":{
+    "speaker":["OPERATOR0040"],
+    "text":"Double screens make me nauseous./e"
+  },
+  "sc01Interact02":{
+    "speaker":["OPERATOR0040"],
+    "text":"Some assorted gadgets./l Not much use since work gives me all the tools I'd ever need./e"
+  },
+  "sc02Interact00":{
+    "speaker":["OPERATOR0040"],
+    "text":"Sometimes my boss is on here talking about some hip new joint in the city./l Or a global catastrophe./e"
+  },
+  "sc02Interact001":{
+    "speaker":["[Television]", "OPERATOR0040"],
+    "text":"/e"
+  },
+  "sc02Interact01":{
+    "speaker":["OPERATOR0040"],
+    "text":"This piece insults me./p I would do anything to sit down on this thing for real./e"
+  },
+  "sc02Interact02":{
+    "speaker":["OPERATOR0040","CIVILIAN0379","OPERATOR0040","CIVILIAN0379","OPERATOR0040"],
+    "text":""
+  },
+  "sc02Interact021":{
+    "speaker":["CIVILIAN0379","OPERATOR0040"],
+    "text":""
+  },
+  "bossMonologue00":{
+    "speaker":["Exelsior"],
+    "text":"Attention, /pOPERATOR0040."
+  },
+  "axePickup00":{
+    "speaker":[""],
+    "text":"Picked up a handaxe./p You might as well need the protection./e"
+  },
+  "axePickup01":{
+    "speaker":["Iris"],
+    "text":"I'm ending this one way or another./l It won't keep me in a cell EVER again!/e"
+  },
+  "elevator":{
+    "speaker":["Iris"],
+    "text":"Looks like one of the lifts at work. /pI wonder if-/p oh!/eUhm../eGeez, this place is huge. /pOnly one place the boss could be, though-/l 'Control Room'.../eOkay, let's do this./e/!98"
+  },
+  "bossSpeech00":{
+    "speaker":["Exelsior"],
+    "text":"Well,/p well,/p well./l Seems you like doing things the hard way./e Return to your cell, or I will have to use excessive force./e./p./p.well then./l You will regret ever finding that portal./p Think you can run from me now?/eLet's see you do ANYTHING against the all-knowing commander of this facility!/eWhat, think you can reason with me?/pI am above your pity./l Now.../e/!9aGoodnight./e/!e3"
+  },
+  "bossSpeech01":{
+    "speaker":["Exelsior"],
+    "text":"Well,/p well,/p well./l Seems you like doing things the hard way./e Return to your cell, or I will have to use excessive force./e./p./p.well then./l You will-/p wait, what are you doing?/eNo, don't you realize you're making a mistake?/p You have NOTHING/p besides my world!/eYour family,/p friends,/p you are destroying their lives!/eYou will regret.../p pay.../p for this-/e(bee-OOP!)/e/!e4"
+  },
+  "lazy":{
+    "speaker":["Iris","Desmond","Iris"],
+    "text":"What's this thing here?/e/s'Hello! If you're reading this, I'm a lazy bum who is still working on this game../eHopefully this note won't be here in a few weeks.../l or years./eSee you later!'/e/s/p./p./p./e'"
+  },
+  "ending0":{
+    "speaker":["Exelsior","OPERATOR0038","OPERATOR0040","Exelsior","OPERATOR0040","Exelsior",""],
+    "text":"Welcome back, OPERATORs!/eYou've done some impressive work today./p You may now rest for the day.../p to ensure you've got enough energy for tomorrow!/e/sHey, 40, what's up? Is your facial scanner acting up or something?/e/sH-huh? No, I'm fine, just./p./p./eI saw something REALLY weird while working today./p Something /punnatural./l And when I tried to approach it-/c/sOPERATOR40, is something the matter?/eFrom what it seems, you shouldn't have encountered anything out of the ordinary./eSome anomalies exist deep in the program,/p sure,/p but you weren't even CLOSE to the edge, believe me!/eI was just retrieving you to remind you your shift had ended!/p Now go along now, you seem a bit irate today!/e/sBut I swear there was an anomaly,/p why'd you-/c/sOPERATORS-/l DISMISSED!/eAnd so she couldn't discover what was behind that portal./l But maybe with a bit more dexterity.../eNah, not gonna happen./e/!99"
+  },
+  "ending1":{
+    "speaker":["","Exelsior",""],
+    "text":"You decide that venturing out is not worth the risk,/p and you put your headset back on./e/sGood.../l Thank you for complying with your rightful ADMINISTRATOR./eTake a deep breath now, this is all just a dream./!e1/p./p./e/sSo life returned to normal for Iris./p Or rather, for OPERATOR0040./eThe ADMINISTRATOR never questioned what happened, and Iris would encounter similar portals in following months./eShe never tried to enter one again,/p for she believed only trouble lurked beyond the normally barred-off door of her cell./eShe would pretend the portals didn't exist, but one day./p./p./l they disappeared for real./eAnd Iris would serve as an OPERATOR for the rest of her life, in blissful simplicity./e/!99"
+  },
+  "ending2":{
+    "speaker":[""],
+    "text":"Iris had heard many differing stories about the world outside, none of them very positive./eIs the world coated in endless jungle?/p Wasteland?/p Ocean?/p Or was there no world at all?/eFor all she knew she could step outside and be evaporated in an instant./eBut that didn't happen./l Iris looked around her new surroundings, then at the massive facility behind her./eOnly one thing was certain./l As much as she would miss her family and coworkers, /pshe could never go back./e/!99"
+  },
+  "ending3":{
+    "speaker":[""],
+    "text":"So you're finally up./p Indeed, it never intended to kill you./eYou now have a new cell,/p a new job,/p and new furniture./eYour new room also has backup generators, so it's not like you'll be able to strut around like that again./eYour new job is to get rid of anomalies like what you saw./p So more don't get into trouble./eAfter that,/l you may rot alone./e It is what you deserve./e/!99"
+  },
+  "ending4":{
+    "speaker":["Iris"],
+    "text":"Destroying the central server released everyone from the simulation and their cells immediately./eSeeing this, I went back downstairs to find my family and friends./eWhen some of the others realized what I had done, they either turned away in confliction,/p or expressed gratitude./eSome decided to leave the facility and venture into the unknown./eBut not my family./l They resolved to stay by my side, no matter what./eAnd we have a lot of work ahead of us./eWe're going to make this place truly better for all of us./e/!99"
+  }
+}
