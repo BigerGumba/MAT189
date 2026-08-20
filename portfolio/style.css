@@ -39,12 +39,6 @@ header p {
   margin: 0 0 0.25rem; 
 }
 
-.project .meta { 
-  color: #666; 
-  font-size: 0.9rem; 
-  margin: 0 0 1rem; 
-}
-
 .mycontainter {
     display: flex;
     flex-direction: row;
