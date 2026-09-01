@@ -1,5 +1,7 @@
 const layers = document.querySelectorAll(".layer");
 
+const lerp = (start, end, t) => start + (end - start) * t;
+
 function updateParallax() {
 
     const scroll = window.scrollY + window.innerHeight/2;
@@ -13,8 +15,14 @@ function updateParallax() {
 
         const y = -(scroll * speed);
 
+        // const r = lerp(230,245,(depth+1)/6);
+        // const g = lerp(207,201,(depth+1)/6);
+        // const b = lerp(184,236,(depth+1)/6);
+        
         layer.style.transform =
             `translateY(${y + window.innerHeight/2}px) scale(${scale})`;
+        // layer.style.fill =
+        //     `rgb(${r}, ${g}, ${b})`;
     });
 }
 
