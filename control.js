@@ -1,25 +1,23 @@
-const layers = document.querySelectorAll('[class^="layer-"]');
+const layers = document.querySelectorAll(".layer");
 
-document.addEventListener("DOMContentLoaded", function() {
-    layers.forEach(layer => {
-        const i = Number(layer.dataset.layer);
+function updateParallax() {
 
-        layer.style.transform = 
-            `scaleX(${1.0 + (i * 0.1)}px)`
-            `scaleY(${1.0 + (i * 0.1)}px)`;
-    })
-});
-
-window.addEventListener("scroll", () => {
-    const scroll = window.scrollY;
+    const scroll = window.scrollY + window.innerHeight/2;
 
     layers.forEach(layer => {
-        const i = Number(layer.dataset.layer);
+        const depth = Number(layer.dataset.layer);
 
-        const speed = i * 0.1;
+        const speed = 1.0 + (depth * 0.05);
+
+        const scale = 1.0 + (depth * 0.05);
+
+        const y = -(scroll * speed);
 
         layer.style.transform =
-            `translateY(${scroll * speed}px)`;
-
+            `translateY(${y + window.innerHeight/2}px) scale(${scale})`;
     });
-});
+}
+
+window.addEventListener("scroll", updateParallax);
+
+updateParallax();
