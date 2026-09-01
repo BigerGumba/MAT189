@@ -6,8 +6,36 @@ body {
   margin: 0 auto;
   padding: 1.5rem;
 
-  background-image: url("media/bricks.png");
-  background-repeat: repeat;
+  background-color: #dfcaa1;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+}
+
+.parallax {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 400vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.layer {
+    position: absolute;
+    inset: 0;
+    
+    display: flex;
+    justify-content: center;
+
+    max-width: 100%;
+    height: auto;
+    width: auto\8;
+
+    background-image: url("media/mainparallaxbg.svg");
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-size: auto 100%;
 }
 
 header { 
