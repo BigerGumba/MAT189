@@ -9,9 +9,9 @@ function updateParallax() {
     layers.forEach(layer => {
         const depth = Number(layer.dataset.layer);
 
-        const speed = 1.0 + (depth * 0.05);
+        const speed = 1.0 + (depth * 0.1);
 
-        const scale = 1.0 + (depth * 0.05);
+        const scale = 1.0 + (depth * 0.1);
 
         const y = -(scroll * speed);
 
@@ -23,6 +23,7 @@ function updateParallax() {
             `translateY(${y + window.innerHeight/2}px) scale(${scale})`;
         // layer.style.fill =
         //     `rgb(${r}, ${g}, ${b})`;
+        layer.style.opacity = (depth + 1) / 6;
     });
 }
 
