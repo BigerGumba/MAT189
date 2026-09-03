@@ -1,9 +1,16 @@
 const layers = document.querySelectorAll(".layer");
+const icons = document.querySelectorAll(".icon");
 
 const lerp = (start, end, t) => start + (end - start) * t;
 
-function updateParallax() {
+function ready() {
+    icons.forEach(icon => {
+        const bgColor = icon.dataset.color;
+        icon.style.backgroundColor = bgColor;
+    });
+}
 
+function updateParallax() {
     const scroll = window.scrollY + window.innerHeight/2;
 
     layers.forEach(layer => {
@@ -27,6 +34,8 @@ function updateParallax() {
     });
 }
 
+window.addEventListener("DOMContentLoaded", ready);
 window.addEventListener("scroll", updateParallax);
 
+ready();
 updateParallax();

@@ -41,8 +41,21 @@ body {
     transform-origin: top center;
 }
 
-.contacts {
+.hbox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.icon {
+  flex: 0 0 auto;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
 }
 
 header { 
@@ -60,7 +73,7 @@ h2 {
 
 h3 {
   font-size: 2.5rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 header p { 
@@ -74,22 +87,14 @@ footer p {
   margin: -0.6rem;
 }
 
-.project { 
-  margin: 0 0 4rem; 
-}
-
-.project h2 { 
-  margin: 0 0 0.25rem; 
-}
-
 img, video { 
   max-width: 100%; 
   display: inline-block; 
 }
 figcaption { 
-  color: #bbb; 
-  font-size: 0.85rem; 
-  margin-top: 0.4rem; 
+  color: #fff; 
+  font-size: 1.1rem; 
+  margin-top: -0.4rem; 
   font-weight: bold;
 }
 
