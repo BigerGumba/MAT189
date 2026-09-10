@@ -1,6 +1,29 @@
 const layers = document.querySelectorAll(".layer");
 const icons = document.querySelectorAll(".icon");
 
+document.querySelectorAll(".icon").forEach(function(icon) {
+    icon.addEventListener("click", async function() {
+        if (icon.hasAttribute("data-id")) {
+            switch(icon.dataset.id) {
+                case("0"):
+                    try {
+                        await navigator.clipboard.writeText('bigergumba');
+                    } catch (err) {
+                         console.error('Text copy failed; ', err);
+                    }
+                    break;
+                case("1"):
+                    try {
+                        await navigator.clipboard.writeText('desmondjdevine@gmail.com');
+                    } catch (err) {
+                         console.error('Text copy failed; ', err);
+                    }
+                    break;
+            }
+        }
+    });
+});
+
 const lerp = (start, end, t) => start + (end - start) * t;
 
 function ready() {
@@ -34,8 +57,19 @@ function updateParallax() {
     });
 }
 
+async function copyText() {
+    const textElement = document.getElementById("copyOnClick");
+    
+    try {
+        // Use the Clipboard API to copy the text
+        await navigator.clipboard.writeText(textElement.textContent);
+    } catch (err) {
+        console.error("Failed to copy text; ", err);
+    }
+}
+
+
 window.addEventListener("DOMContentLoaded", ready);
 window.addEventListener("scroll", updateParallax);
-
 ready();
 updateParallax();
