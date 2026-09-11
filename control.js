@@ -1,5 +1,10 @@
 const layers = document.querySelectorAll(".layer");
 const icons = document.querySelectorAll(".icon");
+const notifications = document.querySelectorAll(".notification");
+
+const lerp = (start, end, t) => start + (end - start) * t;
+
+let notificationTimer;
 
 document.querySelectorAll(".icon").forEach(function(icon) {
     icon.addEventListener("click", async function() {
@@ -8,6 +13,7 @@ document.querySelectorAll(".icon").forEach(function(icon) {
                 case("0"):
                     try {
                         await navigator.clipboard.writeText('bigergumba');
+                        showNotification(notifications[0]);
                     } catch (err) {
                          console.error('Text copy failed; ', err);
                     }
@@ -15,6 +21,7 @@ document.querySelectorAll(".icon").forEach(function(icon) {
                 case("1"):
                     try {
                         await navigator.clipboard.writeText('desmondjdevine@gmail.com');
+                        showNotification(notifications[0]);
                     } catch (err) {
                          console.error('Text copy failed; ', err);
                     }
@@ -22,9 +29,13 @@ document.querySelectorAll(".icon").forEach(function(icon) {
             }
         }
     });
+    icon.addEventListener("mouseenter", async function() {
+        icon.classList.add("hover");
+    });
+    icon.addEventListener("mouseleave", async function() {
+        icon.classList.remove("hover");
+    });
 });
-
-const lerp = (start, end, t) => start + (end - start) * t;
 
 function ready() {
     icons.forEach(icon => {
@@ -57,17 +68,15 @@ function updateParallax() {
     });
 }
 
-async function copyText() {
-    const textElement = document.getElementById("copyOnClick");
-    
-    try {
-        // Use the Clipboard API to copy the text
-        await navigator.clipboard.writeText(textElement.textContent);
-    } catch (err) {
-        console.error("Failed to copy text; ", err);
-    }
-}
+function showNotification(notif) {
+    clearTimeout(notificationTimer);
 
+    notif.classList.add("show");
+
+    notificationTimer = setTimeout(() => {
+        notif.classList.remove("show");
+    }, 1500);
+}
 
 window.addEventListener("DOMContentLoaded", ready);
 window.addEventListener("scroll", updateParallax);
