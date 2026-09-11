@@ -10,6 +10,10 @@ body {
   background-repeat: repeat-y;
 }
 
+main {
+  padding: 2rem 2rem;
+}
+
 .parallax {
     position: fixed;
 
@@ -111,7 +115,9 @@ body {
 
 header { 
   margin: 2rem 0 3rem; 
+  text-align: center;
 }
+
 header h1 { 
   margin: 0;
   font-size: 5rem;
@@ -148,6 +154,7 @@ figcaption {
   font-size: 1.1rem; 
   margin-top: -0.4rem; 
   font-weight: bold;
+  text-align: center;
 }
 
 footer { 

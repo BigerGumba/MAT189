@@ -767,7 +767,7 @@ function toggle() {
 }
 
 async function setup() {
-  const response = await fetch("./media/dialogue.json");
+  const response = await fetch("./media/games/dialogue.json");
   dialogueFile = await response.json();
 
   playButton = document.getElementById("play_button");
