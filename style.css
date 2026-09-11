@@ -4,7 +4,6 @@ body {
   color: #ccffff;
   max-width: 68rem;
   margin: 0 auto;
-  padding: 1.5rem;
 
   background-color: #ffad5c;
   background-size: 100% auto;
@@ -91,6 +90,25 @@ body {
   margin: 1rem 5rem 1rem;
 }
 
+.banner-bg {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.banner {
+  max-width: 68rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 8rem;
+}
+
 header { 
   margin: 2rem 0 3rem; 
 }
@@ -124,6 +142,7 @@ img, video {
   max-width: 100%; 
   display: inline-block; 
 }
+
 figcaption { 
   color: #fff; 
   font-size: 1.1rem; 
