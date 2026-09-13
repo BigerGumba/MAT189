@@ -149,6 +149,12 @@ img, video {
   display: inline-block; 
 }
 
+figure img {
+  display: block;
+  margin: auto auto 1rem;
+  width: 30%;
+}
+
 figcaption { 
   color: #fff; 
   font-size: 1.1rem; 
