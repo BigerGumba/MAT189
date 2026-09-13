@@ -114,7 +114,7 @@ main {
   padding: 8rem;
 }
 
-.slot p {
+.indent {
   font-size: 1.5rem;
   margin: 1rem;
 }
@@ -163,6 +163,17 @@ figcaption {
   text-align: center;
 }
 
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+  margin: 2rem;
+}
+
 footer { 
   margin: 4rem 0 2rem; 
   color: #bbb; 
@@ -176,16 +187,16 @@ footer p {
 }
 
 a:link {
-  color: #7766ff;
+  color: #8888ff;
   text-decoration: none;
 }
 
 a:visited {
-  color: #7766ff;
+  color: #8888ff;
 }
 
 a:hover {
-  color: #7766ff;
+  color: #ff44ff;
   text-decoration: underline;
 }
 
