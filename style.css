@@ -114,7 +114,7 @@ main {
   padding: 8rem;
 }
 
-.slot {
+.slot p {
   font-size: 1.5rem;
   margin: 1rem;
 }
@@ -131,7 +131,7 @@ header h1 {
 
 h2 {
   font-size: 3rem;
-  margin: 0rem;
+  margin: 5rem;
 }
 
 h3 {
