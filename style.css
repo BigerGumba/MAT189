@@ -114,6 +114,11 @@ main {
   padding: 8rem;
 }
 
+.slot {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
 header { 
   margin: 2rem 0 3rem; 
   text-align: center;
@@ -126,7 +131,7 @@ header h1 {
 
 h2 {
   font-size: 3rem;
-  margin: 1rem;
+  margin: 0rem;
 }
 
 h3 {
@@ -137,11 +142,6 @@ h3 {
 header p { 
   margin: 0.25rem 0 0; 
   font-size: 1.4rem;
-}
-
-footer p {
-  color: #fff;
-  margin: -0.6rem;
 }
 
 img, video { 
@@ -164,6 +164,8 @@ footer {
 }
 
 footer p {
+  color: #fff;
+  margin: -0.6rem;
   font-size: 1.2rem;
 }
 
